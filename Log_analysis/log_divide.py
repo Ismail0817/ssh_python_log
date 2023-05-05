@@ -14,4 +14,4 @@ with open('sample_log.txt', 'r') as f:
 
         date_time = re.search(r'\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}', datetime_part).group()
         date, time = date_time.split('T')
-        print(f'Date: {date}, Time: {time}, Host: {info_seperated[1]}, Process: {info_seperated[2]}, Message: {message}')
+        print(f'Date: {date}, Time: {time}, Timezone: {timezone_part} Host: {info_seperated[1]}, Process: {info_seperated[2]}, Message: {message}')
